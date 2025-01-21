@@ -1,0 +1,4 @@
+rootProject.name = 'dithering-parent'
+include('interface')
+include('floyd-steinberg-impl')
+

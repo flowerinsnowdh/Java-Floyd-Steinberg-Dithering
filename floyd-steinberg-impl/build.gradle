@@ -1,0 +1,19 @@
+plugins() {
+    id('java')
+}
+
+group = project.parent.group
+version = project.parent.version
+
+repositories() {
+    mavenCentral()
+}
+
+dependencies() {
+    testImplementation(platform("org.junit:junit-bom:${version_jupiter}"))
+    testImplementation('org.junit.jupiter:junit-jupiter')
+}
+
+test() {
+    useJUnitPlatform()
+}
