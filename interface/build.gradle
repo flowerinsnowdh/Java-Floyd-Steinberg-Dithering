@@ -10,6 +10,8 @@ repositories() {
 }
 
 dependencies() {
+    compileOnly("org.jetbrains:annotations:${version_java_annotations}")
+
     testImplementation(platform("org.junit:junit-bom:${version_jupiter}"))
     testImplementation('org.junit.jupiter:junit-jupiter')
 }
